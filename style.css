@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    width: 70%;
+    max-width: 1200px;
+    min-height: 300%;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        flex-grow: 1;
+    }
+    .sidebar ul {
+        width: 250px;
+        justify-content: center;
+    }
+}
+
+/* sidebar */
+
+.sidebar {
+    width: max(27ch, 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green);
+    padding: 5ch 0.5ch;
+    gap: 2ch;
+}
+
+.portrait {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-size: 175px;
+    background-position: 50% 30%;
+    background-image: url(images/portrait.JPG);
+    /* clip-path: circle(40% at 50% 45%); */
+}
+
+.contacts {
+    width: 100%;
+}
+
+.contacts > * {
+    width: 100%;
+    padding: 0.75ch 1ch;
+}
+
+.contacts > *:hover {
+    background-color: rgba(85, 85, 85, 0.5);
+    border-left: solid 3px rgb(228, 196, 13);
+}
+
+img[src*='icons'] {
+    width: 2ch;
+    height: auto;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+/* body content */
+
+.content {
+    padding: 3ch;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1ch;
+}
+
+.content h2 {
+    margin-bottom: 1ch;
+}
+
+.content p {
+    font-weight: 350;
+    margin-bottom: 1.5ch;
+    color: rgb(58, 58, 58);
+}
+
+.greeting {
+    margin: 3ch 0ch 5ch 0ch;
+}
+
+/* general */
+
+li {
+    align-items: center;
+    display: flex;
+    gap: 1ch;
+    color: white;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
