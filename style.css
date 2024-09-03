@@ -12,7 +12,7 @@ body {
 
 .main-content {
     display: flex;
-    width: 70%;
+    width: 75%;
     max-width: 1200px;
     min-height: 300%;
 }
@@ -68,7 +68,7 @@ body {
     border-left: solid 3px rgb(228, 196, 13);
 }
 
-img[src*='icons'] {
+.contacts img[src*='icons'] {
     width: 2ch;
     height: auto;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
@@ -81,7 +81,7 @@ img[src*='icons'] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    gap: 1ch;
+    gap: 2ch;
 }
 
 .content h2 {
@@ -94,8 +94,32 @@ img[src*='icons'] {
     color: rgb(58, 58, 58);
 }
 
+/* introduction */
+
 .greeting {
-    margin: 3ch 0ch 5ch 0ch;
+    display: flex;
+    margin: 3ch 0ch;
+    align-items: center;
+    gap: 2ch;
+}
+
+.greeting img[src*='icons'] {
+    height: 5ch;
+    width: auto;
+    filter: invert(87%) sepia(73%) saturate(6937%) hue-rotate(342deg) brightness(98%) contrast(103%);
+}
+
+/* experience */
+
+.experience ul {
+    padding: 3ch;
+    border-radius: 3px;
+    background-color: rgb(240, 240, 240);
+}
+
+.experience li {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* general */
