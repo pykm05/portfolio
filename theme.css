@@ -1,6 +1,7 @@
 :root {
-    --green: rgb(72, 139, 72);
+    --green: rgb(74, 133, 82);
     --green_hover: rgb(65, 120, 65);
+    --font_color: rgb(58, 58, 58);
 }
 
 h1 {
